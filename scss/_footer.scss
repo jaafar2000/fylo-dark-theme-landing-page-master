@@ -1,0 +1,191 @@
+footer {
+  background-color: $DarkBlue1;
+	padding-top: 285px;;
+	padding-bottom: 100px;
+	position: relative;
+	& .card{
+    margin: 0px;
+		position: absolute;
+		top: -20%;
+    width: 350px;
+		left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+		background-color: $DarkBlue ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include breakpoint-up(medium){
+      width: 70%;
+    }
+    & .card__first__p{
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+    }
+    & .card__second__p{
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-align: center;
+      width: 90%;
+      line-height: 1.7;
+      opacity: 0.7;
+
+    }
+    & .input{
+      color: $White;
+      padding: 15px 80px;
+      border-radius: 30px;
+      text-align: center;
+      width: 90%;
+      z-index: 5;
+      margin-bottom: 20px;
+      @include breakpoint-up(medium){
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+    }
+    & .card__links{
+      color: $White;
+      padding: 15px 80px;
+      background-image: linear-gradient(to right, $Cyan, $Blue);
+      display: block;
+      border-radius: 30px;
+      text-align: center;
+      width: 90%;
+      margin-bottom: 10px;
+      background-color: $DarkBlueMain;
+      z-index: 5;
+      @include breakpoint-up(medium){
+        margin-bottom: 20px;
+        width: 70%;
+        padding: 15px 30px;
+        
+      }
+    }
+
+	}
+  & .container {
+    color: $White;
+    & .footer__sections{
+      @include breakpoint-up(medium){
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+      }
+    }
+    & .email__phone{
+      @include breakpoint-up(medium){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    & .abcd{
+      @include breakpoint-up(medium){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+      }
+    }
+    & img {
+      margin-bottom: 50px;
+    }
+    & .lorem {
+      &::before {
+        background-image: url("../images/icon-location.svg");
+        height: 17px;
+      }
+    }
+    & .email {
+      &::before {
+        background-image: url("../images/icon-email.svg");
+        height: 15px;
+      }
+      margin-bottom: 80px !important;
+    }
+    & .phone {
+      &::before {
+        background-image: url("../images/icon-phone.svg");
+        height: 15px;
+      }
+    }
+
+    & .phone,
+    & .email,
+    & .lorem {
+      font-size: 15px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+      line-height: 1.9;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 8px;
+        width: 15px;
+        background-repeat: no-repeat;
+        background-size: 85%;
+      }
+    }
+    & .footer__links {
+      & .main__ul {
+        @include breakpoint-up(medium){
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+        }
+        & li {
+          & a {
+            display: block;
+            color: $White;
+            font-size: 18px;
+            margin-bottom: 30px;
+          }
+          & .inner__ul {
+            margin-bottom: 40px;
+            & li {
+              & a {
+                font-size: 16px;
+                letter-spacing: 1.1px;
+                color: $White;
+                margin-bottom: 10px;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+    & .social {
+      margin: 20px auto;
+      & div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid $White;
+        margin-right: 20px;
+        &:hover{
+          cursor: pointer;
+          border-color:$Cyan  ;
+        }
+        &:hover .icon{
+            cursor: pointer;
+            color:$Cyan  ;
+        }
+
+        & .icon {
+          margin-top: 5px;
+          font-size: 26px;
+          margin-left: 7px ;
+
+        }
+      }
+    }
+  }
+}

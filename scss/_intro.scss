@@ -1,0 +1,225 @@
+.intro{
+  padding-bottom: 150px;
+  position: relative;
+
+    &::after{
+    content: "";
+    width: 100%;
+    height: 51%;
+    background-color: $DarkBlueMain;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+    @include breakpoint-up(medium){
+      height: 20%;
+      border-top-left-radius:10px ;
+    }
+  }
+  & .box{
+    & .intro__img{
+      width: 100%;
+      height: 250px;
+      background-image: url("../images/illustration-intro.png");
+      background-size: 85%;
+      background-repeat: no-repeat;
+      background-position: 63%;
+      z-index: 9;
+      @include breakpoint-up(medium){
+      width: 47%;
+      height: 400px;
+
+    }
+
+    }
+
+    & .intro__info{
+      @include breakpoint-up(medium){
+        width: 50%;
+      }
+        & .intro__p__first {
+        text-align: center;
+        color: $White;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+				line-height: 1.5;
+        padding: 0 20px;
+				margin-bottom: 20px;
+				padding-top: 14px;
+
+        
+        &::before{
+          content: "";
+          width: 100%;
+          height: 141px;
+          background-image: url("../images/bg-curvy-mobile.svg");
+          background-size: 100%;
+          background-repeat: no-repeat;
+          position: absolute;
+          bottom: 50%;
+          background-color: $DarkBlue;
+          left: 0px;
+          z-index: -1;
+          @include breakpoint-up(medium){
+            background-image: url("../images/bg-curvy-desktop.svg");
+            height: 400px;
+            bottom: 20%;
+            width: 100%;
+
+          }
+      }
+
+        }
+      & .intro__p__second{
+        text-align: center;
+        color: $White;
+				font-size: 13px;
+				line-height: 1.5;
+				margin-bottom: 20px;
+				letter-spacing: 0.7px;
+				margin:  0px 20px 40px;
+				position: relative;
+        z-index: 5;
+        background-color: $DarkBlueMain;
+
+      }
+      & .intro__links{
+        color: $White;
+        padding: 15px 80px;
+        background-image: linear-gradient(to right, $Cyan, $Blue);
+        display: block;
+        border-radius: 30px;
+        text-align: center;
+        width: fit-content;
+        background-color: $DarkBlueMain;
+        z-index: 5;
+
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .intro {
+//   margin-bottom: 150px;
+//   position: relative;
+//   &::after{
+//     content: "";
+//     width: 100%;
+//     height: 50%;
+//     background-color: $DarkBlueMain;
+//     position: absolute;
+//     bottom: 0px;
+//     left: 0px;
+//     z-index: -1;
+//   }
+//   & .box {
+//     & .intro__img {
+//       width: 100%;
+//       background-color: $DarkBlue;
+//       height: 250px;
+//       background-image: url("../images/illustration-intro.png");
+//       background-size: 85%;
+//       background-repeat: no-repeat;
+//       background-position: 63%;
+//       z-index: 9;
+//     }
+//     & .intro__info {
+//       & .intro__p__first {
+//         text-align: center;
+//         color: $White;
+//         font-family: "Raleway", sans-serif;
+//         font-weight: 700;
+//         font-size: 25px;
+// 				line-height: 1.5;
+//         padding: 0 20px;
+// 				margin-bottom: 20px;
+// 				padding-top: 25px;
+//         z-index: 8;
+//         &::before{
+//           content: "";
+//           width: 100%;
+//           height: 200px;
+//           background-image: url("../images/bg-curvy-mobile.svg");
+//           background-size: 100%;
+//           background-repeat: no-repeat;
+//           position: absolute;
+//           bottom: 21%;
+//           border: 1px solid magenta;
+//           left: 0px;
+//           background-color: red;
+//           z-index: -1;
+//       }
+//       & .intro__p__second {
+//         text-align: center;
+//         color: $White;
+// 				font-size: 13px;
+// 				line-height: 1.5;
+// 				margin-bottom: 20px;
+// 				letter-spacing: 0.7px;
+// 				margin:  0px 20px 40px;
+// 				position: relative;
+//         z-index: 5;
+//       }
+//       & .intro__links {
+//         color: $White;
+//         padding: 15px 80px;
+//         background-image: linear-gradient(to right, $Cyan, $Blue);
+//         display: block;
+//         border-radius: 30px;
+//         text-align: center;
+//         width: fit-content;
+//         z-index: 5;
+
+//       }
+//     }
+//   }
+// }
+// }

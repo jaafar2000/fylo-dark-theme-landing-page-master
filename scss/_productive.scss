@@ -1,0 +1,84 @@
+.productive {
+  padding-bottom: 165px;
+  background-color: $DarkBlueMain;
+  & .container {
+    @include breakpoint-up(medium){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+    & .productive__img {
+      width: 100%;
+      height: 250px;
+      background-image: url("../images/illustration-stay-productive.png");
+      background-size: 85%;
+      background-repeat: no-repeat;
+      background-position: 63%;
+      @include breakpoint-up(medium){
+        width: 70%;
+        height: 500px;
+  
+      }
+    }
+    & .productive__info {
+      @include breakpoint-up(medium){
+        width: 60%;
+  
+      }
+      & .productive__info__title {
+        color: $White;
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        @include breakpoint-up(medium){
+          font-size: 35px;
+          width: 60%;
+        }
+      }
+      & .productive__info__desc {
+        color: $White;
+        font-size: 13px;
+        line-height: 1.9;
+        letter-spacing: 0.7px;
+        margin-bottom: 10px;
+      }
+      & .abc {
+        & .produvtive__links {
+          color: $Cyan;
+          padding: 3px 16px 2px 0px;
+          border-bottom: 1px solid $Cyan;
+          position: relative;
+          font-size: 13px;
+          transition: 300ms;
+          &:hover::after{
+            filter: invert(0);
+          }
+          &:hover{
+            color: $White;
+            border-color: $White;
+            opacity: 0.6;
+          }
+          @include breakpoint-up(medium){
+            font-size: 15px;
+            
+          }
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 17px;
+            height: 17px;
+            background-image: url("/images/icon-arrow.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: -6px;
+            bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
